@@ -1,6 +1,6 @@
 # s3-create-elasticsearch-record
 This Python 3.6 package for AWS Lambda creates a record in AWS Elasticsearch when sent an 'ObjectCreate' event from an s3 bucket. 
-* Set up "Object Created" event triggers from as many s3 buckets as you like. Perfect for multiple staging environments.
+* Set up "ObjectCreated" event triggers to this Lambda function from as many s3 buckets as you like. Can handle multiple staging environments.
 * Also creates a new index in Elasticsearch if you don't already have one.
 * Captures object information such as title, content-type, content-length, and all custom metadata. This is customizable.
 * Results can be searched by both full-text and keyword in Elasticsearch/Kibana.
