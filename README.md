@@ -1,6 +1,6 @@
 # AWS Data Lake
 ## Dynamically Create an Elasticsearch Catalog of Everything in your s3 Buckets.
-s3 is a powerful and inexpensive storage solution, but with limited search capabilities. Elasticsearch to the rescue! This Python 3.6 package for AWS Lambda creates a record in AWS Elasticsearch when sent an 'ObjectCreate' event from an s3 bucket. 
+AWS s3 is a powerful and inexpensive storage solution, but with limited search capabilities. Elasticsearch to the rescue! This Python 3.6 package for AWS Lambda creates a record in AWS Elasticsearch when sent an 'ObjectCreate' event from an s3 bucket. 
 * Set up "ObjectCreated" event triggers to this Lambda function from as many s3 buckets as you like. Can handle multiple staging environments.
 * Also creates a new index in Elasticsearch if you don't already have one.
 * Captures object information such as title, content-type, content-length, and all custom metadata. This is customizable.
