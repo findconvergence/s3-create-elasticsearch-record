@@ -4,12 +4,10 @@ This Python 3.6 package for AWS Lambda creates a record in AWS Elasticsearch whe
 * Also creates a new index in Elasticsearch if you don't already have one.
 * Captures object information such as title, content-type, content-length, and all custom metadata. This is customizable.
 * Results can be searched by both full-text and keyword in Elasticsearch/Kibana.
-
+* See the accompanying repo to **[remove records](https://github.com/findconvergence/s3-delete-elasticsearch-record)** as well.
 
 ## Thanks:
 Credit to Amit Sharma (@amitksh44) for the [original scripts](https://aws.amazon.com/blogs/database/indexing-metadata-in-amazon-elasticsearch-service-using-aws-lambda-and-python/) in Python 2.7.  This update allows you to use Python 3.6 and the latest Elasticsearch build to keep a dynamic catalog of your Data Lake objects in AWS S3.  
-
-See the accompanying repo to **remove records** as well.
 
 ## Requirements:
 * AWS S3 bucket
