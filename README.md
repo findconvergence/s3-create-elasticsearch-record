@@ -20,6 +20,6 @@ See the accompanying repo to **remove records** as well.
 * First time packaging a Python script for Lambda?  [Read this guide.](https://aws.amazon.com/premiumsupport/knowledge-center/build-python-lambda-deployment-package/)
 * Update your AWS Lambda endpoint under *user constants* in **lambda_function.py** (Note the AWS default port for Elasticsearch is 80.)
 * All required modules are currently included in the AWS Lambda environment, except for Elasticsearch. 
-* If you need, **pip install elasticsearch -t .** will update Elasticsearch locally (and install urllib as well.)
-* Run **chmod -R 755** on all files
+* If you need, `pip install elasticsearch -t .` will update Elasticsearch locally (and install urllib as well.)
+* Run `chmod -R 755` on all files
 * Zip and upload file to your Lambda function.
