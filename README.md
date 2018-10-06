@@ -1,6 +1,6 @@
 # s3-create-elasticsearch-record
 This Python 3.6 package for AWS Lambda creates a record in AWS Elasticsearch when sent an 'ObjectCreate' event from an s3 bucket. 
-* Set up as many s3 bucket triggers as you like.
+* Set up as many s3 bucket triggers as you like. We can handle it.
 * Also creates a new index in Elasticsearch if you don't already have one.
 
 
@@ -18,6 +18,6 @@ See the accompanying repo to remove records.
 * First time packaging a Python script for Lambda?  [Read this guide.](https://aws.amazon.com/premiumsupport/knowledge-center/build-python-lambda-deployment-package/)
 * Update your AWS Lambda endpoint under *user constants* in **lambda_function.py** (Note the AWS default port for Elasticsearch is 80.)
 * All required modules are currently included in the AWS Lambda environment, except for Elasticsearch. 
-** **pip install elasticsearch -t .** will update Elasticsearch locally (and install urllib as well.)
+..* **pip install elasticsearch -t .** will update Elasticsearch locally (and install urllib as well.)
 * Run **chmod -R 755** on all files
 * Zip and upload file to your Lambda function.
