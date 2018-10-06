@@ -21,4 +21,5 @@ Credit to Amit Sharma (@amitksh44) for the [original scripts](https://aws.amazon
 * All required modules are currently included in the AWS Lambda environment, except for Elasticsearch. 
 * If you need, `pip install elasticsearch -t .` inside the `create-record` directory to update Elasticsearch locally (will install urllib as well.)
 * Run `chmod -R 755` on the entire `create-record` directory.
-* Zip up the `create-record` directory and upload file to your Lambda function.
+* Zip up the *contents* of the `create-record` directory `cd create-record && zip -r9 ../create-record .`
+* Upload the zip to your Lambda function.
