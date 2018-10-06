@@ -1,4 +1,4 @@
-# s3-create-elasticsearch-record
+# AWS Data Lake - Dynamically Create Elasticsearch Records from s3 Objects.
 This Python 3.6 package for AWS Lambda creates a record in AWS Elasticsearch when sent an 'ObjectCreate' event from an s3 bucket. 
 * Set up "ObjectCreated" event triggers to this Lambda function from as many s3 buckets as you like. Can handle multiple staging environments.
 * Also creates a new index in Elasticsearch if you don't already have one.
